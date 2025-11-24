@@ -57,6 +57,8 @@ services:
       - DISPLAY_WIDTH=1600
       - DISPLAY_HEIGHT=968
       - RUN_XTERM=no
+      - VNC_SERVER_HOST=host.docker.internal
+      - VNC_SERVER_PORT=5900
     ports:
       - "8080:8080"
     networks:
